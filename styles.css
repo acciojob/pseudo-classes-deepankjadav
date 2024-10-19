@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+:root{
+	background-color: rgb(135, 206, 235);
+}
+p:first-child{
+	background-color: black;
+	color: white;
+}
+p:nth-child(2){
+	color: standard;
+}
+p:last-child{
+	color: red;
+}
+.styled-list li {
+  background-color: gray; /* Default background color for all items */
+  width: 50%;
+  padding: 10px;
+}
+
+/* Every odd item (first, third, fifth) with white background */
+.styled-list li:nth-child(odd) {
+  background-color: white;
+}
+
+/* First and last items with font size of 22px */
+.styled-list li:first-child,
+.styled-list li:last-child {
+  font-size: 22px;
+}
+
+/* Third-to-last item with pink background */
+.styled-list li:nth-last-child(3) {
+  background-color: pink;
+}
